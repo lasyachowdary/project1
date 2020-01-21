@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>my form</title>
+<style>
+    body {
+  background-image: url(html4.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+        }
+   input.i1{
+    width: 300px;
+    border: 1px solid red;
+    height: 30px;
+    color:black;
+    }
+      input.i2{
+    width: 300px;
+    border: 1px solid red;
+    height: 30px;
+    color:black;
+    }
+      input.i3{
+    width: 300px;
+    border: 1px solid red;
+    height: 30px;
+    color:black;
+    }
+      input.i4{
+    width: 300px;
+    border: 1px solid red;
+    height: 30px;
+    color:black;
+    minlength:6;
+    }
+        input.i5{
+    width: 300px;
+    border: 1px solid red;
+    height: 30px;
+    color:black;
+    minlength:6;
+    }
+         .container{
+    margin-top:6%;
+
+  
+    }
+    .form{
+    color:black;
+    display:flex;
+    font-size: 25px;
+    justify-content: center;
+
+    }
+    .sub1
+    {
+    padding: 5px;
+    margin-left:35%;
+    margin-top:5%;
+    }
+ h1
+    {
+    color:#960019;
+    font-size:70px;
+    text-align:center;
+      background-color:rgba(255, 255, 255, 0.6);
+    }
+    h2
+    {
+    color:#960019;
+    font-size:30px;
+     text-align:center;
+     font-family:verdana;
+    }
+    img
+    {
+    border-radius: 50%;
+     height:90px;
+      width:90px;
+      
+        
+    }
+    
+    .img
+    {
+       margin-left: 220px;
+    }
+    .con
+    {   
+       margin-left:35%;
+        margin-right:35%;
+     background-color:rgba(255, 255, 255,0.6);
+     border-radius:4%;
+    }
+       a
+       {
+       color: black;
+       }
+       .check a
+       {
+       color:black;
+       }
+       .check a:hover
+       {
+       color:blue;
+       }
+   a:hover    {
+       color:blue;
+       }
+ </style>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color", "red");
+  });
+  });
+  </script>
+</head>
+<body>
+<div class="container">
+<div class="h1">
+<h1> <marquee direction= "right"  width="50%">welcome to bouquet shop</marquee></h1>
+</div>
+<div class="con">
+<div class="img">
+<img src="loginp.png" alt="Paris" >
+</div>
+
+<h2> sign  up</h2>
+<div class="form">
+  <form action="try.php " method="post">
+<label >First name: <br></label>
+<input class=" i1" type="text" name="firstname"  placeholder="First name" maxlength="10" autofocus required>
+<br>
+<label >Last name: <br><label> 
+<input class=" i2" type="text" name="lastname" placeholder="Last name" required>
+<br>
+<label>E-mail:<br></label>
+<input class=" i3" type="email" name="email"   placeholder="For example lasya@gmail.com" required>
+<br>
+<label>password:<br> </label>
+<input class=" i4" type="password" name="password"    placeholder="New password" required>
+<br>
+<label>Confirm password:<br></label>
+<input class=" i5" type="password" name="Confirm password"    placeholder=" pasconfirmsword" required>
+<br>
+<div class="check">
+<input type=checkbox> 
+<a href="#" >i agree to all the terms and conditions</a>
+</div> 
+<a  href=" file:///home/lasya/Desktop/trail/trail2.html" > login </a>
+<br>
+<input  class="sub1"type="submit" value="signup">
+<br>
+<br>
+<div>
+</div>
+
+</form>
+</div>
+</body>
+</html>

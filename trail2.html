@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>loginpage</title>
+    <style>
+        body {
+   
+  background-image: url(html4.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+              }
+  input.i1{
+    width: 400px;
+    border: 1px solid red;
+    height: 30px;
+    color:black;
+    }
+      input.i2{
+    width: 400px;
+    border: 1px solid red;
+    height: 30px;
+    color:black;
+    minlength="6" 
+    }
+    input.i3
+    {
+    width: 15px;
+    border: 1px solid red;
+      font-size:10px;
+    }
+    .form
+    {
+  
+    margin-left:10%;
+    margin-bottom:10%;
+    color:white;
+    font-size:25px;
+    }
+    .sub2
+    {
+    margin-left:155px;
+    font-size:20px;
+    }
+    h1
+    {
+    font-size:50px;
+    margin-left:40%;
+    color:red;
+    padding-top:7%;
+   
+    }
+ .con
+  {
+  
+    margin-top:20%;
+   background-color:rgba(255, 255, 255, 0.6);
+    margin-left:35%;
+    margin-right:35%;
+}
+
+    </style>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color", "red");
+  });
+   });
+  </script>
+</head>
+<body>
+<div class="con">
+<h1> Login</h1>
+<div class="form">
+<form action=" ">
+<label  style=" font-size:30px" >E-mail: <br></label>
+<input class=" i1" type="email" name="email"   placeholder="For example lasya@gmail.com" required>
+<br>
+<br>
+<label>password:<br> </label>
+<input class=" i2" type="password" name="password"   placeholder="password" required>
+<br>
+<a  href="#" style=" color:white; font-size:15px; "> forgetpassword</a>
+<br>
+<div>
+<input  class="sub2"type="submit" value="login">
+<br>
+<br>
+</div>
+</form>
+</div>
+</div>
+</body>
+</html>
